@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WATRS — California State University Monterey Bay / NASA Ames Research Center</title>
+  <meta name="description" content="The Water Agriculture Technology & Remote Sensing Lab. " />
+
+  <!-- Open Graph for nice link previews -->
+  <meta property="og:title" content="Lab Name" />
+  <meta property="og:description" content="Applied research using measurements, models, and satellite observations at CSUMB." />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root{
+      --bg:#0b1220; --card:#0f1a2e; --text:#e8eefc; --muted:#b9c6e4;
+      --link:#8ab4ff; --border:#22304d; --accent:#5eead4;
+      --max: 1040px;
+    }
+    @media (prefers-color-scheme: light){
+      :root{ --bg:#ffffff; --card:#f7f8fb; --text:#0b1220; --muted:#4b5563;
+        --link:#1d4ed8; --border:#e5e7eb; --accent:#0ea5e9; }
+    }
+    *{ box-sizing:border-box; }
+    body{
+      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background:var(--bg); color:var(--text); line-height:1.6;
+    }
+    a{ color:var(--link); text-decoration:none; }
+    a:hover{ text-decoration:underline; }
+    header{
+      padding:64px 20px 28px; border-bottom:1px solid var(--border);
+      background: radial-gradient(1000px 400px at 20% 10%, rgba(94,234,212,.15), transparent 60%);
+    }
+    .wrap{ max-width:var(--max); margin:0 auto; }
+    .top{
+      display:flex; gap:20px; align-items:flex-start; justify-content:space-between; flex-wrap:wrap;
+    }
+    .brand h1{ margin:0 0 10px; font-size: clamp(28px, 4vw, 44px); letter-spacing:-0.02em; }
+    .brand p{ margin:0; color:var(--muted); max-width: 70ch; }
+    nav{
+      display:flex; gap:14px; flex-wrap:wrap; margin-top:10px;
+    }
+    nav a{
+      padding:8px 10px; border:1px solid var(--border); border-radius:999px;
+      background: color-mix(in oklab, var(--card), transparent 40%);
+    }
+    main{ padding:34px 20px 70px; }
+    .grid{
+      display:grid; gap:18px;
+      grid-template-columns: repeat(12, 1fr);
+    }
+    .card{
+      grid-column: span 12;
+      background:var(--card); border:1px solid var(--border); border-radius:16px;
+      padding:18px 18px 16px;
+    }
+    @media (min-width: 860px){
+      .card.span6{ grid-column: span 6; }
+      .card.span4{ grid-column: span 4; }
+      .card.span8{ grid-column: span 8; }
+    }
+    h2{ margin:0 0 10px; font-size:20px; letter-spacing:-0.01em; }
+    h3{ margin:18px 0 8px; font-size:16px; color:var(--muted); font-weight:600; }
+    ul{ padding-left:18px; margin:10px 0 0; }
+    .pill{
+      display:inline-flex; align-items:center; gap:8px; padding:6px 10px;
+      border:1px solid var(--border); border-radius:999px; margin:6px 6px 0 0;
+      font-size:14px; color:var(--muted);
+    }
+    .dot{ width:10px; height:10px; border-radius:50%; background:var(--accent); }
+    .people{
+      display:grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap:14px; margin-top:10px;
+    }
+    .person{
+      border:1px solid var(--border); border-radius:14px; padding:12px;
+      background: color-mix(in oklab, var(--card), transparent 20%);
+    }
+    .person strong{ display:block; }
+    .person small{ color:var(--muted); display:block; margin-top:2px; }
+    .meta{ color:var(--muted); font-size:14px; }
+    footer{
+      border-top:1px solid var(--border); padding:22px 20px; color:var(--muted);
+    }
+    code{ background: color-mix(in oklab, var(--card), transparent 10%); padding:2px 6px; border-radius:8px; }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="wrap top">
+      <div class="brand">
+        <h1>Lab Name</h1>
+        <p>
+          The WATRS Lab at <strong>CSUMB</strong> conducts applied research using
+          <strong>ground-based measurements</strong>, <strong>models</strong>, <strong> satellite observations</strong>, and <strong> software developement</strong>.
+          Our work bridges methods (e.g., field studies, modeling, experiments) and applications (e.g., agriculture, water resources.
+        </p>
+        <div style="margin-top:14px">
+          <span class="pill"><span class="dot"></span> Open positions: <a href="#join">See joining</a></span>
+          <span class="pill">📍 City, State</span>
+          <span class="pill">✉️ <a href="mailto:adpurdy@csumb.edu">adpurdy@csumb.edu</a></span>
+        </div>
+      </div>
+
+      <nav aria-label="Primary">
+        <a href="#research">Research</a>
+        <a href="#people">People</a>
+        <a href="#publications">Publications</a>
+        <a href="#software">Software & Data</a>
+        <a href="#news">News</a>
+        <a href="#join">Join</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="grid" id="research">
+      <div class="card span8">
+        <h2>Research</h2>
+        <p class="meta">
+          Replace the bullets with your lab’s 3–5 core research directions. Keep it readable for students, collaborators, and press.
+        </p>
+
+        <h3>Areas</h3>
+        <ul>
+          <li><strong>Theme 1:</strong> One-sentence description of what you do and why it matters.</li>
+          <li><strong>Theme 2:</strong> Key question + method + application.</li>
+          <li><strong>Theme 3:</strong> A direction that signals interdisciplinarity or unique capability.</li>
+        </ul>
+
+        <h3>Selected projects</h3>
+        <ul>
+          <li><a href="#">Project Name</a> — 1–2 lines. (Add a link to a paper, dataset, or project page.)</li>
+          <li><a href="#">Project Name</a> — 1–2 lines.</li>
+          <li><a href="#">Project Name</a> — 1–2 lines.</li>
+        </ul>
+      </div>
+
+      <div class="card span4" id="news">
+        <h2>News</h2>
+        <ul>
+          <li><strong>2026-02:</strong> Paper accepted at <em>Conference/Journal</em>.</li>
+          <li><strong>2026-01:</strong> New preprint on <em>topic</em>.</li>
+          <li><strong>2025-11:</strong> Congrats to <em>Name</em> for award/fellowship.</li>
+        </ul>
+        <p class="meta" style="margin-top:12px">
+          Tip: keep 5–8 items, most recent first.
+        </p>
+      </div>
+    </section>
+
+    <section class="grid" id="people" style="margin-top:18px">
+      <div class="card span12">
+        <h2>People</h2>
+        <div class="people">
+          <div class="person">
+            <strong>PI Name</strong>
+            <small>Principal Investigator</small>
+            <div class="meta">
+              <a href="#">Website</a> · <a href="#">Google Scholar</a> · <a href="#">CV</a>
+            </div>
+          </div>
+          <div class="person">
+            <strong>Member Name</strong>
+            <small>PhD Student — Topic</small>
+            <div class="meta"><a href="#">Personal site</a> · <a href="#">Scholar</a></div>
+          </div>
+          <div class="person">
+            <strong>Member Name</strong>
+            <small>Postdoc — Topic</small>
+            <div class="meta"><a href="#">Personal site</a></div>
+          </div>
+          <div class="person">
+            <strong>Member Name</strong>
+            <small>MS / RA — Topic</small>
+            <div class="meta"><a href="#">Personal site</a></div>
+          </div>
+        </div>
+        <p class="meta" style="margin-top:12px">
+          Add photos later if you want, but names + roles + links already looks professional.
+        </p>
+      </div>
+    </section>
+
+    <section class="grid" id="publications" style="margin-top:18px">
+      <div class="card span12">
+        <h2>Publications</h2>
+        <p class="meta">Add 5–10 recent items here, and link out to your full list.</p>
+        <ul>
+          <li><strong>Author A</strong>, Author B. “Paper Title.” <em>Venue</em>, 2026. <a href="#">PDF</a> · <a href="#">Code</a> · <a href="#">DOI</a></li>
+          <li><strong>Author A</strong>, Author B. “Paper Title.” <em>Venue</em>, 2025. <a href="#">PDF</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="grid" id="software" style="margin-top:18px">
+      <div class="card span6">
+        <h2>Software</h2>
+        <ul>
+          <li><a href="#">github.com/org/repo</a> — what it does in one line.</li>
+          <li><a href="#">github.com/org/repo</a> — what it does in one line.</li>
+        </ul>
+      </div>
+
+      <div class="card span6">
+        <h2>Datasets</h2>
+        <ul>
+          <li><a href="#">Dataset name</a> — size, domain, license.</li>
+          <li><a href="#">Dataset name</a> — size, domain, license.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="grid" id="join" style="margin-top:18px">
+      <div class="card span12">
+        <h2>Join the lab</h2>
+        <p>
+          We welcome <strong>PhD students</strong>, <strong>postdocs</strong>, <strong>research assistants</strong>, and <strong>visiting scholars</strong>.
+          If you’re interested, email <a href="mailto:lab@email.edu">lab@email.edu</a> with:
+        </p>
+        <ul>
+          <li>CV + (optional) transcript</li>
+          <li>2–3 sentences about your interests and why they match the lab</li>
+          <li>Links to writing, code, or prior projects</li>
+        </ul>
+        <p class="meta">
+          You can also include a short “What we look for” paragraph (skills, values, collaboration style).
+        </p>
+      </div>
+    </section>
+
+    <section class="grid" id="contact" style="margin-top:18px">
+      <div class="card span12">
+        <h2>Contact</h2>
+        <p>
+          <strong>Lab Name</strong><br/>
+          Department / School, University<br/>
+          Building, Room — Street Address<br/>
+          City, State ZIP<br/>
+        </p>
+        <p class="meta">
+          Email: <a href="mailto:lab@email.edu">lab@email.edu</a> ·
+          GitHub: <a href="#">github.com/org</a> ·
+          Bluesky/Twitter/LinkedIn: <a href="#">@handle</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div>© <span id="y"></span> Lab Name. Built on GitHub Pages.</div>
+      <div class="meta">Last updated: <span id="d"></span></div>
+    </div>
+  </footer>
+
+  <script>
+    const now = new Date();
+    document.getElementById("y").textContent = now.getFullYear();
+    document.getElementById("d").textContent = now.toISOString().slice(0,10);
+  </script>
+</body>
+</html>
